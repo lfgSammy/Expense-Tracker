@@ -95,7 +95,7 @@ WSGI_APPLICATION = 'expense_tracker.wsgi.application'
 
 DATABASE_URL= config('DATABASE_URL', default=None)
 if DATABASE_URL:
-    DATABASE = {
+    DATABASES = {
         'default':dj_database_url.parse(DATABASE_URL)
     }
 else:

@@ -32,7 +32,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://expense-tracker-production-ce26.up.railway.app/',
 ]
 
-ALLOWED_HOSTS = ['https://expense-tracker-production-ce26.up.railway.app/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

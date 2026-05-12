@@ -28,7 +28,11 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast = bool, default = False)
 
-ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    'https://expense-tracker-production-ce26.up.railway.app/',
+]
+
+ALLOWED_HOSTS = ['https://expense-tracker-production-ce26.up.railway.app/']
 
 
 # Application definition
